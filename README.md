@@ -35,6 +35,7 @@ management.
 5.  Data (image + weight + breakdown) is sent to MongoDB.\
 6.  Dashboard visualizes waste statistics for cafeteria staff and
     management.
+<img width="667" height="652" alt="image" src="https://github.com/user-attachments/assets/07b031d7-9204-4c57-86f3-51a0de04bbef" />
 
 ## 🔹 Tech Stack
 
@@ -47,13 +48,12 @@ management.
 
 ## 🔹 Expected Impact
 
--   Encourage higher tray return rates.\
--   Provide insights into food waste patterns.\
--   Support sustainability reporting and planning.\
+-   Encourage higher tray return rates.
+-   Provide insights into food waste patterns.
+-   Support sustainability reporting and planning.
 -   Educate students on environmental impact.
 
 ------------------------------------------------------------------------
 
 <img width="1286" height="794" alt="image" src="https://github.com/user-attachments/assets/2d6713f5-f04e-4449-a57a-e4685eb9c949" />
 <img width="1281" height="425" alt="image" src="https://github.com/user-attachments/assets/919fe1ca-6d0a-483b-93ec-5dd249661c66" />
-<img width="667" height="652" alt="image" src="https://github.com/user-attachments/assets/07b031d7-9204-4c57-86f3-51a0de04bbef" />
