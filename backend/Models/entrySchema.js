@@ -28,6 +28,10 @@ const EntrySchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+   imagePath: {
+    type: String, // store local path or cloud URL
+    required: false,
+  },
   deviceId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Device",
