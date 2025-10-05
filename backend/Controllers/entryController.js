@@ -7,18 +7,6 @@ const connectDB = require("../Database/MongoDb");
 
 //Create
 const createEntry = async (req, res) => {
-    //Example seed data for POSTMAN testing
-    /*
-    {
-    "ingest_id": "PI-01:2025-10-04T20:30:16Z",
-    "meatWeight": 100,
-    "vegWeight": 50,
-    "carbWeight": 120,
-    "totalWeight": 280,
-    "imagePath": "/uploads/images/test_01.jpg",
-    "deviceId": "68e12f962038417beaadc836"
-    }
-    */
     await connectDB();
     try {
         const {
@@ -49,9 +37,19 @@ const createEntry = async (req, res) => {
         console.error(err);
         res.status(500).json({ message: "Error creating entry", error: err.message });
     }
-
-
-}
+    //Example seed data for POSTMAN testing
+        /*
+        {
+        "ingest_id": "PI-01:2025-10-04T20:30:16Z",
+        "meatWeight": 100,
+        "vegWeight": 50,
+        "carbWeight": 120,
+        "totalWeight": 280,
+        "imagePath": "/uploads/images/test_01.jpg",
+        "deviceId": "68e12f962038417beaadc836"
+        }
+        */
+};
 //Read
 const getEntry = async(req,res)=>{
     const id = req.params.id
