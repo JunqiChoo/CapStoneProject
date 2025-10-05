@@ -7,7 +7,7 @@
         <input
           type="email"
           class="input-pill"
-          placeholder="username"
+          placeholder="name@gmail.com"
           v-model="User.email"
         />
         <input
@@ -32,14 +32,29 @@
 
 <script setup>
 import { ref } from 'vue'
-// import axios from 'axios'
-// import { useRouter } from 'vue-router'
-
+import axios from 'axios'
+import { useRouter } from 'vue-router'
+const router = useRouter();
 const User = ref({ email: '', password: '' })
 
 const loginUser = async () => {
-  // your existing logic
-}
+  try {
+    const res = await axios.post('http://localhost:3000/api/login', {
+      email: User.value.email,
+      password: User.value.password
+    });
+
+    localStorage.setItem('token', res.data.token);
+    console.log('Login successful!');
+    //router.push('/Home'); // or whatever route you use
+     await router.push('/DashBoard')
+  } catch (err) {
+    console.error(err);
+    await router.push("/Login")
+    //toast.error("Username or password inavlid, please try again.....")
+  }
+};
+
 const createAccountClick = async () => {
   // your existing logic
 }

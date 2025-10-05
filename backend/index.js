@@ -11,9 +11,6 @@ app.use(cors({
   origin: 'http://localhost:5173'
 }))
 
-
-
-
 app.use('/api',require("./Routes/userRoutes"))
 
 app.get('/', (req, res) => {

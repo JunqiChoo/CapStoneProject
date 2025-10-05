@@ -61,9 +61,9 @@ const btnClickRewards = async()=>{
 }
 
 const btnLogOut = async()=>{
-  //localStorage.removeItem("token"); 
+  localStorage.removeItem("token"); 
   //toast.success(`Log out successful`)
-  //router.push("/login");
+  router.push("/Login");
 }
 
 
